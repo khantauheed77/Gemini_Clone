@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
-const GEMINI_API_KEY = 'AIzaSyD8SKOCyIcU86ONYJchWoIiC9OfjJzEDIo';
+const GEMINI_API_KEY = "AIzaSyDSJjhFBWvG0A54QpNSOCBHGhxnuH80o6o";
 const ai = new GoogleGenAI({
-    apiKey: GEMINI_API_KEY, 
+  apiKey: GEMINI_API_KEY,
 });
 
 async function main(prompt) {
@@ -14,8 +14,8 @@ async function main(prompt) {
     console.log(text);
     return text;
   } catch (error) {
-    console.error('Error:', error);
-    return 'Sorry, there was an error processing your request.';
+    console.error("Error:", error);
+    return "Sorry, there was an error processing your request.";
   }
 }
 
